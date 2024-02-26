@@ -1,6 +1,6 @@
 package edu.badpals.bicipalma.domain;
 
-public class Bicicleta {
+public class Bicicleta implements Movil{
     private int id = 0;
 
     public Bicicleta(int id){
@@ -13,7 +13,6 @@ public class Bicicleta {
     }
 
     public String toString(){
-        String cadena =Integer.toString(id);
-        return cadena;
+        return Integer.toString(this.id);
     }
 }
