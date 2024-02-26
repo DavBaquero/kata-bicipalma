@@ -1,6 +1,9 @@
 package edu.badpals.bicipalma.domain;
 
+import static org.junit.Assert.assertEquals;
+
 import org.junit.Before;
+import org.junit.Test;
 
 public class BicicletaTest {
     Bicicleta bici;
@@ -10,4 +13,8 @@ public class BicicletaTest {
         this.bici = new Bicicleta(999);
     }
 
+            @Test
+    public void constructorBiciTest() {
+        assertEquals(999, bici.getId());
+    }
 }
