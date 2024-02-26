@@ -11,4 +11,9 @@ public class Bicicleta {
     public int getId() {
         return this.id;
     }
+
+    public String toString(){
+        String cadena =Integer.toString(id);
+        return cadena;
+    }
 }
