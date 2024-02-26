@@ -13,7 +13,7 @@ public class BicicletaTest {
         this.bici = new Bicicleta(999);
     }
 
-            @Test
+    @Test
     public void constructorBiciTest() {
         assertEquals(999, bici.getId());
     }
@@ -22,4 +22,12 @@ public class BicicletaTest {
     public void toStringTest() {
         assertEquals("999", bici.toString());
     }
+
+    
+    @Test
+    public void implementationMovilTest() {
+        Movil movil = bici;
+        assertEquals(999, movil.getId());
+    }
+
 }
