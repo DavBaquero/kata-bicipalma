@@ -13,4 +13,16 @@ public class Anclajes {
             this.anclajes[i] = new Anclaje();
         }
     }
+
+    Anclaje[] anclajes(){
+        return this.anclajes;
+    }
+
+    int numAnclajes(){
+        return this.anclajes.length;
+    }
+
+    void ocuparAnclaje(int posicion , Movil bici) {
+
+    }
 }
