@@ -1,5 +1,6 @@
 package edu.badpals.bicipalma.domain;
 
+import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
@@ -19,5 +20,15 @@ public class AnclajeTest {
         assertTrue(anclaje.isOcupado());
         anclaje.getBici();
         assertTrue(anclaje.isOcupado());
+    }
+
+    @Test
+    public void liberarBiciTest() {
+        Anclaje anclaje = new Anclaje();
+        anclaje.anclarBici(new Bicicleta(911));
+        assertTrue(anclaje.isOcupado());
+
+        anclaje.liberarBici();
+        assertFalse(anclaje.isOcupado());        
     }
 }
