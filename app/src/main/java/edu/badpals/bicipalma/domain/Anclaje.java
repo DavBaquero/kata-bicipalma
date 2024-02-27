@@ -19,4 +19,9 @@ public class Anclaje {
         this.bici = bici;
         this.ocupado = true;
     }
+
+    void liberarBici(){
+        this.bici = null;
+        this.ocupado = false;
+    }
 }
